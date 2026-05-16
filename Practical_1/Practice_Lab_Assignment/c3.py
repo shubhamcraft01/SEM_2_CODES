@@ -1,0 +1,12 @@
+from datetime import date
+first_date=input()
+second_date=input()
+y1=int(first_date[0:4])
+m1=int(first_date[5:7])
+d1=int(first_date[8:10])
+y2=int(second_date[0:4])
+m2=int(second_date[5:7])
+d2=int(second_date[8:10])
+first=date(y1,m1,d1)
+second=date(y2,m2,d2)
+print((second-first).days)
